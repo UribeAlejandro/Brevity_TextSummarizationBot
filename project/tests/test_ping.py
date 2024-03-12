@@ -1,4 +1,4 @@
-from app import main
+from app import main  # noqa
 
 
 def test_ping(test_app):
