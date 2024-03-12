@@ -3,7 +3,7 @@ tortoise_orm = "app.db.TORTOISE_ORM"
 location = "./migrations"
 src_folder = "./."
 
-[tool.ruff]
+[tool.ruff.lint]
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
 select = ["E", "F"]
 ignore = []
