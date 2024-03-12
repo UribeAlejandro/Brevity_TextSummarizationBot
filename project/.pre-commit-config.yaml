@@ -29,7 +29,7 @@ repos:
         types: [python]
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: "v0.0.264"
+    rev: "v0.3.2"
     hooks:
       - id: ruff
         name: ruff
