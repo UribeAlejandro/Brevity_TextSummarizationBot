@@ -1,7 +1,6 @@
-from fastapi import APIRouter
-
 from app.api import crud
 from app.models.pydantic import SummaryPayloadSchema, SummaryResponseSchema
+from fastapi import APIRouter
 
 router = APIRouter()
 
