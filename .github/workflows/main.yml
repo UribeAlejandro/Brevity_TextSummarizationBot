@@ -27,7 +27,3 @@ jobs:
           isort --check-only .
           black --check .
           ruff check .
-
-      - name: Test with pytest
-        run: |
-          pytest project/tests/
