@@ -1,8 +1,0 @@
--r project/requirements.txt
-
-ruff
-black
-black[jupyter]
-isort
-docformatter
-pytest
