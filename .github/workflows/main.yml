@@ -59,7 +59,7 @@ jobs:
         run: |
           docker run \
             -d \
-            --name fastapi-tdd \
+            --name brevity \
             -e PORT=8765 \
             -e ENVIRONMENT=dev \
             -e DATABASE_URL=sqlite://sqlite.db \
@@ -67,10 +67,10 @@ jobs:
             -p 5003:8765 \
             ${{ env.IMAGE }}:latest
       - name: Pytest
-        run: docker exec fastapi-tdd python -m pytest .
+        run: docker exec brevity python -m pytest .
       - name: Flake8
-        run: docker exec fastapi-tdd python -m ruff check .
+        run: docker exec brevity python -m ruff check .
       - name: Black
-        run: docker exec fastapi-tdd python -m black . --check
+        run: docker exec brevity python -m black . --check
       - name: isort
-        run: docker exec fastapi-tdd python -m isort . --check-only
+        run: docker exec brevity python -m isort . --check-only
